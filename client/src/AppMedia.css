@@ -1,0 +1,14 @@
+@media only screen and (max-width: 600px) {
+    .App-header h1 {
+        font-size: 20px;
+    }
+    .cardForm-header h2 {
+        font-size: 18px;
+    }
+    .cardForm div:nth-child(3) {
+        grid-column: 1/5;
+      }
+      .cardForm div:nth-child(4) {
+        grid-column: 1/5;
+      }
+}

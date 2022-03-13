@@ -43,6 +43,13 @@ body {
   grid-column: 1/5;
   border-radius: 3px;
 }
+.cardForm-header h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  margin: 0;
+}
 .cardForm label {
   display: flex;
   flex-direction: column;

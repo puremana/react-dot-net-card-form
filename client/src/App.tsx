@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import './AppMedia.css';
 import Hamburger from './hamburger.png';
 
 function App() {
