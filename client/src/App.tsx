@@ -1,24 +1,40 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+
       </header>
+      <section>
+        <div className="cardForm">
+          <div className="cardForm-header">
+            <h1>Register Card</h1>
+          </div>
+          <div>
+            <label>
+              Card Number
+              <input type="text" />
+            </label>
+          </div>
+          <div>
+            <label>
+              CVC
+              <input type="text" />
+            </label>
+          </div>
+          <div>
+            <label>
+              Expiry
+              <input type="month" />
+            </label>
+          </div>
+          <div className="button">
+            Submit
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
