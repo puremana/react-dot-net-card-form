@@ -1,17 +1,27 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import './AppMedia.css';
 import Hamburger from './hamburger.png';
+import Arrow from './arrow.png';
+import Menu from './Menu';
+
+
 
 function App() {
+  const [showMenu, setShowMenu] = useState(false);
+
   return (
     <div className="App">
       <header className="App-header">
-        <img className="icon" src={Hamburger} />
+        <div className="icon" onClick={() => setShowMenu(!showMenu)}>
+          {!showMenu && <img src={Hamburger} />}
+          {showMenu && <img src={Arrow} />}
+        </div>
         <h1>
           Register Card Form
         </h1>
       </header>
+      {showMenu && <Menu />}
       <section>
         <div className="cardForm">
           <div className="cardForm-header">
