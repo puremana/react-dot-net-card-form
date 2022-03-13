@@ -26,11 +26,22 @@ body {
   color: white;
 }
 
+.welcomeBox {
+  width: 90%;
+  max-width: 600px;
+  border-radius: 3px;
+  background-color: white;
+  color: black;
+  margin: 20px auto 20px auto;
+  padding: 20px;
+
+}
+
 .cardForm {
   width: 90%;
   max-width: 600px;
   border-radius: 3px;
-  margin: 100px auto 100px auto;
+  margin: 40px auto 100px auto;
   padding: 20px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -84,8 +95,12 @@ body {
   font-size: 18px;
   font-weight: 600;
   border-radius: 3px;
+  user-select: none;
 }
 .cardForm .button:hover {
   background-color: #9FA8DA;
   color: white;
+}
+.red {
+  color: red;
 }
